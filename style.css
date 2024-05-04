@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+}
+body{
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    background-image: url(https://plus.unsplash.com/premium_photo-1675314768463-d152edc1e432?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.container{
+    width: 40%;
+    margin:0px auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aqua;
+    padding: 1rem 1.4rem;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 5px 5px 30px darkcyan;
+
+}
+form .input{
+    width: 100%;
+    position: relative;
+}
+form .input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.3rem;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.3rem;
+
+}
+form label{
+    color:black;
+    font-size: 1.2rem;
+}
+form p{
+    color: red;
+    margin: 0px 0px;
+    font-size: 1.2rem;
+    visibility: hidden;
+}
+form select{
+    padding: 0.4rem 0.4rem;
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.input.error p{
+    visibility: visible;
+}
+.input.error input{
+    border: 3px solid red;
+}
+.input.success input{
+    border: 3px solid green;
+}
+.input i{
+    position: absolute;
+    right: 10px;
+   top:45px;
+    font-size: 1.3rem;
+    visibility: hidden;
+}
+.input.error .fa-circle-exclamation{
+    visibility: visible;
+    color: red;
+
+}
+.input.error select{
+    border: 3px solid red;
+
+}
+.input.success select{
+    border: 3px solid green;
+}
+.sub{
+    width: 100%;
+}
+.sub input{
+    width: 100%;
+    border: none;
+    background-color: rgb(138, 43, 226,0.7);
+    border-radius: 12px;
+    cursor: pointer;
+    color:white;
+    font-size: 1.3rem;
+    padding: 0.7rem 0.4rem;
+}
+ 
+.input.success .fa-circle-check{
+    color: green;
+    visibility: visible;
+}
+
+@media screen and (max-width:576px){
+    .container{
+        width: 100%;
+        padding: 0px 13px;
+    }
+}
